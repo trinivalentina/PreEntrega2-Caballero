@@ -30,6 +30,36 @@
     margin-left: 12px;
 }
 
+@media screen and (max-width: 320px) {
+    .responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .cajainterna {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 1080px;
+    }
+
+    .cajadelogo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 1080px;
+    }
+}
+
 .fondoprincipal1{
     background-color: beige;
     display: grid;

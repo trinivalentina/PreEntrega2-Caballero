@@ -117,6 +117,7 @@
 .subtitulos{
     font-style: oblique;
     text-decoration: underline;
+    text-align: center;
 }
 
 .subtitulo{
@@ -162,6 +163,14 @@
     }
 }
 
+.carousel-item {
+    align-items: center;
+}
+
+.textcarousel {
+    text-align: center;
+}
+
 .foto{
     margin-top: 20px;
     margin-right: 450px;
@@ -203,6 +212,12 @@
 }
 
 .card-body{
+    background-color: rgb(214, 241, 182);
+}
+
+.menucolor  {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(214, 241, 182);
 }
 

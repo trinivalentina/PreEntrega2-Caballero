@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width"=device-width, initial-sclae="1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <title>good-vibes.com</title>
     <link rel="shortcut icon" href="../images/favicon.png" type="imagen/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
@@ -15,54 +20,92 @@
         <div>
             <a href="../index.html"><img src="../images/logo.png" class="header"></a>
         </div>
-        <nav class="menu">
-            <input type="button" value="Remeras" class="items">
-            <input type="button" value="Buzos" class="items">
-            <input type="button" value="Pantalones" class="items">
-            <input type="button" value="Vestidos" class="items">
-            <input type="button" value="Sweaters" class="items">
-            <input type="button" value="Bikinis" class="items">
-            <input type="button" value="Accesorios" class="items">
-        </nav>
+        <div>
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="menucolor" href="../index.html">Menu Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menucolor" href="../pages/productos.html">Remeras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menucolor" href="../pages/productos.html">Buzos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menucolor" href="../pages/productos.html">Pantalones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menucolor" href="../pages/productos.html">Vestidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menucolor" href="../pages/productos.html">Accesorios</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <div>
-        <table>
-            <th>
-                <tr>
-                    <img src="../images/nosotros.png" class="foto"></a>
-                    <h2 class="subtitulos">Nosotros</h2>
-                    <p class="p">Good - Vibes es una marca creada en junio del año 2022 con el objetivo de poder crear
-                        prendas inspiradas en transmitir, atravez de los looks, las "buenas vibras/buena onda", de una
-                        manera divertida y relajada. Además, nuestras prendas estan plateadas en una espacio y tiempo
-                        que son: la naturaleza y, en el clima que más nos gusta, el verano. Es una marca registrada en
-                        la ciudad de La Plata (ARG), sustentable y cruelty free.</p>
-                    <img src="../images/colaboraciones.png" class="foto"></a>
-                    <h2 class="subtitulos">Colaboraciones</h2>
-                    <p class="p">Good - Vibes siempre tiene presente el sentimiento de empatia, por eso, invitamos a
-                        distintas marcas y personas reconocidas en el ambito publico a ser parte de nuestro equipo por
-                        medio de colaboraciones.</p>
-                    <img src="../images/backstage.png" class="foto"></a>
-                    <h2 class="subtitulos">Backstage</h2>
-                    <p class="p">Nuestra marca presenta dos desfiles por año: spring-summer y fall winter. Y para que
-                        estos defiles salgan impecables presentamos una gran equipo de compañeros/as los cuales ayudan a
-                        que esto suceda; por eso, es muy importante que darles el reconocimiento necesario a traves de
-                        algunas demotraciones de lo que es nuestro backstage/entre bastidores.</p>
-                </tr>
-            </th>
-        </table>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/nosotros.png" class="d-block w-700" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nosotros</h5>
+                        <p>Good - Vibes es una marca creada en junio del año 2022 con el objetivo de poder crear
+                            prendas inspiradas en transmitir, atravez de los looks, las "buenas vibras/buena onda", de
+                            una
+                            manera divertida y relajada. Además, nuestras prendas estan plateadas en una espacio y
+                            tiempo
+                            que son: la naturaleza y, en el clima que más nos gusta, el verano. Es una marca registrada
+                            en
+                            la ciudad de La Plata (ARG), sustentable y cruelty free.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/colaboraciones.png" class="d-block w-700" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Colaboraciones</h5>
+                        <p>Good - Vibes siempre tiene presente el sentimiento de empatia, por eso, invitamos a
+                            distintas marcas y personas reconocidas en el ambito publico a ser parte de nuestro equipo
+                            por
+                            medio de colaboraciones.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/backstage.png" class="d-block w-700" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Backstage</h5>
+                        <p>Nuestra marca presenta dos desfiles por año: spring-summer y fall winter. Y para que
+                            estos defiles salgan impecables presentamos una gran equipo de compañeros/as los cuales
+                            ayudan a
+                            que esto suceda; por eso, es muy importante que darles el reconocimiento necesario a traves
+                            de
+                            algunas demotraciones de lo que es nuestro backstage/entre bastidores.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
-    <hr>
     <footer class="footer">
-        <div class="menufooter">
-            <a href="../pages/informacion.html"> Informacion</a>
-            <a href="../pages/productos.html"> Productos</a>
-            <a href="../pages/locales.html"> Locales</a>
-            <a href="../pages/infodecompras.html"> Info de compras</a>
-            <a href="../pages/usuario.html"> Usuarios</a>
-            <a href="../pages/comentarios.html"> Comentarios</a>
-        </div>
         <h2 class="contacto">Contactos</h2>
 
         <a href="https://www.instagram.com/good-vibes"><img src="../images/instagram.png" class="redes"></a>

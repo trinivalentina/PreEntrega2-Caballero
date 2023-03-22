@@ -12,7 +12,6 @@ img {
     height: auto;
 }
 
-
 body {
     background-color: white;
 }
@@ -29,7 +28,6 @@ body {
     justify-content: center;
     row-gap: 1.5%;
 }
-
 
 @media screen and (max-width: 719px) {
     #indexContainer {
